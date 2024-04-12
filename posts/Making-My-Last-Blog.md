@@ -1,10 +1,10 @@
 ---
 tags: post
 date: 2019-08-19
-title: Making This Blog
+title: Making my Last Blog
 ---
 
-#### TL;DR: Follow my journey through all the components of a basic blog, or just go straight to [the guide](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "This Guy'd") that I ended up using
+#### Follow my (last) journey through all the components of a basic ([jekyll](https://jekyllrb.com/)) blog, or just go straight to [the guide](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "This Guy'd") that I ended up using
 
 So my first post will be the process I went through to get this blog up and running.
 
@@ -20,16 +20,21 @@ WordPress has a plugin that allows you to generate static HTML, which I can then
 
 In my Googling I also found [Disqus](https://disqus.com "Disqus' Homepage"), which is some sort of buff user-engagement service, but all I needed to know was that I could use it to add live commenting to my static blog.  
 Do I need this?  
-<p align="center">
-  <img src="https://media1.tenor.com/images/e27172b21e27e80eb48b54e0cddd166d/tenor.gif?itemid=14439448" alt="Not at all, boy">
-  <br>
-  <small><i>Not at all, boy</i></small>
-</p>
+
+![gif of a fish from Spongebob Squarepants shaking their head and mouthing "not at all boy!"](https://media1.tenor.com/images/e27172b21e27e80eb48b54e0cddd166d/tenor.gif?itemid=14439448)
+
+*No, not at all*
+
+...
 
 Do I *want* it?  
-<p align="center">
-  <img src="https://media.giphy.com/media/f7G6Ke8vwoC7cR4Ug0/giphy.gif" alt="YES">
-  <br>
-</p>
+
+![spongebob shaking his head so hard he splits in half](https://media.giphy.com/media/f7G6Ke8vwoC7cR4Ug0/giphy.gif)
 
 Let me know what you think in the comments below, don't forget to react and subscribe.
+
+## Note from Future Gabe:
+
+No, you didn't really want it. I will not be adding it back.
+
+![spongebob looking pretentious](https://media1.tenor.com/m/9mwDko87t7oAAAAC/spongebob-meme.gif)
