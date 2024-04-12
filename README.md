@@ -1,2 +1,2 @@
-# website
-My personal website
+# my website
+where some magic happens

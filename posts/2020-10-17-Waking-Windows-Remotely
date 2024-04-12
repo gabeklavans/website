@@ -1,0 +1,12 @@
+---
+tags: post
+date: 2020-10-17
+title: Waking Windows from Sleep Remotely
+---
+
+#### No sleeping on the job
+
+* script on sleepee host to make sleep
+* Commands on sleeper client
+* Doing it on LAN (magic packet with rboot)
+* Doing it on WAN (etherwake + home server)

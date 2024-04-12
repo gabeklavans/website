@@ -1,0 +1,14 @@
+---
+eleventyImport:
+  collections: ["post"]
+---
+<ul>
+{%- for post in collections.post | reverse -%}
+	<li{% if page.url == post.url %} aria-current="page"{% endif %}>
+		<a href={{ post.page.url }}>
+			{{ post.data.title }}
+		</a>
+		<time>{{ post.date }}</time>
+	</li>
+{%- endfor -%}
+</ul>
