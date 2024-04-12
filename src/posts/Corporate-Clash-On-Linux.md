@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: post
 date: 2023-03-15
 title: Running Corporate Clash on Linux

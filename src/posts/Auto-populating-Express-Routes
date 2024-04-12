@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: post
 date: 2018-01-01
 title: Generating Express Routes Automatically

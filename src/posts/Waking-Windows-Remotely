@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: post
 date: 2020-10-17
 title: Waking Windows from Sleep Remotely

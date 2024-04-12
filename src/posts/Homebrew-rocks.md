@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: post
 date: 2020-06-10
 title: Homebrew Rocks
