@@ -1,6 +1,6 @@
 body {
 	color: white;
-	background-color: black;	
+	background-color: #1e1e1e;	
 }
 
 main {
@@ -13,10 +13,9 @@ a {
 
 nav {
 	text-align: center;
-}
-
-nav>a {
-	margin: 0 0.5em;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
 }
 
 .post {

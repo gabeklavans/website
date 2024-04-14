@@ -25,12 +25,14 @@
         <hr>
         <footer>
             <nav>
-                <a href="https://github.com/gabeklavans">github</a>
-                <a href="https://www.linkedin.com/in/gabrielklavans">linkedin</a>
+                <a target="_blank" href="https://github.com/gabeklavans">github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/gabrielklavans">linkedin</a>
+                <a target="_blank" href="https://soundcloud.com/gabriel-klavans">soundcloud</a>
             </nav>
-            <p>{{ quotes | random | join(" - ") }}</p>
-            <br>
-            <a href="/cringe-corner">the cringe corner</a>
+            <span style="display: flex; justify-content: space-between;">
+                <p>{{ quotes | random | join(" - ") }}</p>
+                <a href="/cringe-corner">the cringe corner</a>
+            </span>
         </footer>
     </body
 </html>
