@@ -1,9 +1,8 @@
 ---
 date: 2023-03-15
 title: Running Corporate Clash on Linux
+subtitle: Bottles makes it easy
 ---
-
-#### Bottles Makes it Easy
 
 [Corporate Clash](https://corporateclash.net) doesn't have an official Linux build, so here's how I get it running on any of my Linux machines with little effort.
 

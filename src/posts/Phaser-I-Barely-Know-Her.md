@@ -1,9 +1,9 @@
 ---
 date: 2019-10-17
 title: Phaser? I Barely Know Her!
+subtitle: Making a video game can't be THAT hard
+tags: cringe
 ---
-
-#### Making a video game can't be THAT hard
 
 A couple months ago my room mate and I decided to make a [game](https://github.com/tsbraun1891/GARP.io "GARP.io") a side project. I had already been working on a [Tamagotchi clone](https://github.com/gabeklavans/Tamanotchi "Tamanotchi") web app, so I was ready to put my newfound Node.js/JavaScript skills to the test.
 

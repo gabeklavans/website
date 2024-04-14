@@ -1,9 +1,8 @@
 ---
 date: 2020-05-16
 title: Stalks Move
+subtitle: Watch my app download count rise.
 ---
-
-#### Watch 'em rise. And by 'em I mean my app download count
 
 I quickly fell in love with Animal Crossing: New Horizons. It was exactly the kind of game I was looking for, even before Covid sent everyone into quarantine. There's a system in the game that plays out like a stock market, in which you buy turnips on Sunday for a random price and can sell them at any other point in the week for more random prices. But we know these prices aren't *really* random. They're generated, and they must be generated according to some algorithm with deterministic probabilities. My friends sent me some websites like [Stalks.io](https://stalks.io/) and [TurnipProphet](https://turnipprophet.io/), and seeing these got me thinking about a mobile implementation (besides the already very good progressive web app support). So I decided I'd both learn how to make a native mobile app and learn a bit about how this game works!
 

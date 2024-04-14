@@ -1,9 +1,9 @@
 ---
 date: 2019-08-20
 title: Bash my Head Against a Wall
+subtitle: couldn't think of a better pun
+tags: cringe
 ---
-
-#### Couldn't think of a better pun
 
 There's a server in one of our makerspaces. A dinky desktop computer shoved into a server rack, but running Ubuntu Server nonetheless.
 I was able to get the root user login and password from one of our graduating seniors before he went off to flex his pent up CS prowess. I was traveling with the [Spartans DBC](https://spartansdbc.org/ "Spartans Drum and Bugle Corps") for the summer, but I was eager to start tinkering with the server, so I whipped out my iPhone and started messaging my buddy [Julius](https://www.linkedin.com/in/juliusfrost/ "Jules") since he was on campus. The server is only accessible via devices with authorized SSH keys, so I fired up [Termius](https://termius.com "Tunneling on the go") and generated an SSH key for Julius to put into the server from the terminal at the makerspace. That's when we started running into problems.

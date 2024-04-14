@@ -2,14 +2,16 @@
 layout: layout.njk
 title: Blawg
 eleventyImport:
-  collections: ["post"]
+  collections: ["posts"]
 ---
-{% for post in collections.post | reverse %}
+{% for post in collections.posts | reverse %}
     <div class=post>
         <a href={{ post.page.url }}>
             {{ post.data.title }}
         </a>
         <br>
-        <time>{{ post.date | longDate }}</time>
+        <time datetime={{ post.date }}>{{ post.date | longDate }}</time>
+        <br>
+        <p>{{ post.data.subtitle }}</p>
     </div>
 {% endfor %}

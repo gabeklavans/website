@@ -1,9 +1,9 @@
 ---
 date: 2020-10-13
 title: HyperV versus VirtualBox... Who Will Win? 
+subtitle: HyperV wins.
+tags: cringe
 ---
-
-#### HyperV wins.
 
 If you're running Windows need to be using a VM for something (I use one for work), be very wary of HyperV. It clashes at an OS level with the systems used to run virtual machines, and renders them basically useless. Not only that, it will not be obvious that HyperV is the culprit, and can even surface different errors depending on the context.
 

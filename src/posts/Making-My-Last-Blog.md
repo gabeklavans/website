@@ -1,9 +1,10 @@
 ---
 date: 2019-08-19
 title: Making my Last Blog
+tags: cringe
 ---
 
-#### Follow my (last) journey through all the components of a basic ([jekyll](https://jekyllrb.com/)) blog, or just go straight to [the guide](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "This Guy'd") that I ended up using
+#### Follow my (last) journey through all the components of a basic ([jekyll](https://jekyllrb.com/)) blog, or just go straight to [the guide](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "This Guy'd") that I ended up using.
 
 So my first post will be the process I went through to get this blog up and running.
 
