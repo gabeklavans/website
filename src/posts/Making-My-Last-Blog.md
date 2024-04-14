@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2019-08-19
 title: Making my Last Blog
 ---

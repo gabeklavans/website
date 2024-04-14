@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2020-12-02
 title: Tofu's Wobbly Pupil
 ---

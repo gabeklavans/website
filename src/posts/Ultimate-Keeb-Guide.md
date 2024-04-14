@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2021-06-09
 title: Ultimate From-Scratch Mechanical Keyboard Build Guide
 ---

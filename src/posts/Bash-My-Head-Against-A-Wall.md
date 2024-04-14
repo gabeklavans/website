@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2019-08-20
 title: Bash my Head Against a Wall
 ---

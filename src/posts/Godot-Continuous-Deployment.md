@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2021-04-20
 title: Godot Continuous Deployment from GitHub to Itch.io 
 ---

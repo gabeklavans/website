@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2020-05-16
 title: Stalks Move
 ---

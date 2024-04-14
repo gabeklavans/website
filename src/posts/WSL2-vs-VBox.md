@@ -1,6 +1,4 @@
 ---
-layout: layout.njk
-tags: post
 date: 2020-10-13
 title: HyperV versus VirtualBox... Who Will Win? 
 ---
