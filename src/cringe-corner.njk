@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: the cringe corner
+eleventyImport:
+  collections: ["cringe"]
+---
+witness my transformation
+{% for post in collections.cringe | reverse %}
+    <div class=post>
+        <a href={{ post.page.url }}>
+            {{ post.data.title }}
+        </a>
+        <br>
+        <time datetime={{ post.date }}>{{ post.date | longDate }}</time>
+        <br>
+        <p>{{ post.data.subtitle }}</p>
+    </div>
+{% endfor %}

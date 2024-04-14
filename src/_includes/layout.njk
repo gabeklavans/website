@@ -7,14 +7,16 @@
         <link href="/style.css" rel="stylesheet">
     </head>
     <body>
+        <a href="/">
+        {% if page.url == "/" %}
+            you are here
+        {% else %}
+            {{ backs | random }}
+        {% endif %}
+        </a>
         <nav>
-            <a href="/">
-            {% if page.url == "/" %}
-                Welcome home
-            {% else %}
-                {{ backs | random }}
-            {% endif %}
-            </a>
+            <a href="/">blog</a>
+            <a>projects</a>
         </nav>
         <hr>
         <main>
@@ -22,7 +24,13 @@
         </main>
         <hr>
         <footer>
-            {{ quotes | random | join(" - ") }}
+            <nav>
+                <a href="https://github.com/gabeklavans">github</a>
+                <a href="https://www.linkedin.com/in/gabrielklavans">linkedin</a>
+            </nav>
+            <p>{{ quotes | random | join(" - ") }}</p>
+            <br>
+            <a href="/cringe-corner">the cringe corner</a>
         </footer>
     </body
 </html>
