@@ -5,6 +5,17 @@ module.exports = function(eleventyConfig) {
 		"css"
 	])
 
+	eleventyConfig.addFilter("longDate", (date) => {
+		const options = {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+		};
+
+		return date.toLocaleDateString(undefined, options);
+	})
+
 	return {
 		dir: {
 			input: "src",

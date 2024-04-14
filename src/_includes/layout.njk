@@ -12,22 +12,18 @@
             {% if page.url == "/" %}
                 Welcome home
             {% else %}
-                {{ [
-                    "I wish to leave now",
-                    "Please escort me back",
-                    "Go back",
-                    "Home",
-                    "*leave*"
-                    ] | random }}
+                {{ backs | random }}
             {% endif %}
             </a>
         </nav>
-        {{ content | safe }}
+        <hr>
+        <main>
+            {{ content | safe }}
+        </main>
+        <hr>
         <footer>
-            {{ [
-                '"heck yeag" - julia'
-            ] | random }}
+            {{ quotes | random | join(" - ") }}
         </footer>
-    </body>
+    </body
 </html>
 <ul>

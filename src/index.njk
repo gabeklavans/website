@@ -4,13 +4,12 @@ title: Blawg
 eleventyImport:
   collections: ["post"]
 ---
-<ul>
-    {% for post in collections.post | reverse %}:
-        <li{% if page.url == post.url %} ariacurrent="page"{% endif %}>
-            <a href={{ post.page.url }}>
-                {{ post.data.title }}
-            </a>
-            <time>{{ post.date }}</time>
-        </li>
-    {% endfor %}
-</ul>
+{% for post in collections.post | reverse %}
+    <div class=post>
+        <a href={{ post.page.url }}>
+            {{ post.data.title }}
+        </a>
+        <br>
+        <time>{{ post.date | longDate }}</time>
+    </div>
+{% endfor %}

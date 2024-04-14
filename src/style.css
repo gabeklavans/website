@@ -1,5 +1,20 @@
 body {
 	color: white;
 	background-color: black;	
-	padding: 0 10%
+}
+
+main {
+	padding: 0 10%;
+}
+
+a {
+	color: white;
+}
+
+.post {
+	margin: 1em;
+}
+
+.post>a {
+	font-size: larger;
 }
