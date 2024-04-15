@@ -3,6 +3,11 @@ body {
 	background-color: #1e1e1e;	
 }
 
+img {
+	width: 50%;
+	height: auto;
+}
+
 main {
 	padding: 0 10%;
 }
