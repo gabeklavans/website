@@ -3,7 +3,7 @@ date: 2020-12-02
 title: Tofu's Wobbly Pupil
 ---
 
-![Look at 'em go](/images/tofu-eyes.png "Tofu Eyes")
+![my cat Tofu's oddly-sized pupils](/img/tofu-eyes.png "look at them go")
 
 So apparently something that can just happen to cats is one of their pupils becomes significantly different in size from the other. If coupled with other symptoms like abnormal behavior, it can be an indication of something serious.
 

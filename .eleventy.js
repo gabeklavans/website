@@ -21,6 +21,8 @@ module.exports = function(eleventyConfig) {
 		return posts.filter(post => !cringe.includes(post));
 	})
 
+	eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+
 	return {
 		dir: {
 			input: "src",

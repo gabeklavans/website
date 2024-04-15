@@ -6,6 +6,6 @@ tags: cringe
 
 Is this thing on?
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![some random screenshot of a config file I took at some point](/img/config.png)
 
 Testing one, two... three. :microphone:
