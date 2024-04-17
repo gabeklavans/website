@@ -1,10 +1,4 @@
 module.exports = function(eleventyConfig) {
-	eleventyConfig.setTemplateFormats([
-		"md",
-		"njk",
-		"css"
-	])
-
 	eleventyConfig.addFilter("longDate", (date) => {
 		const options = {
 			year: 'numeric',
@@ -22,6 +16,7 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+	eleventyConfig.addPassthroughCopy({ "src/*.css": "/" });
 
 	return {
 		dir: {
