@@ -1,14 +1,15 @@
 [
-  [
-    "\"heck yeag\"",
-    "julia"
-  ],
-  [
-    "\"What is today, but yesterday's tomorrow?\"",
-    "eugine"
-  ],
-  [
-    "\"...the convention is rizzless!\"",
-    "https://youtu.be/xLCaAw24HE8"
-  ]
+  {
+    "quote": "heck yeag",
+    "quotee": "julia"
+  },
+  {
+    "quote": "What is today, but yesterday's tomorrow?",
+    "quotee": "eugine"
+  },
+  {
+    "quote": "...the convention is rizzless!",
+    "quotee": "https://youtu.be/xLCaAw24HE8",
+    "link": "https://youtu.be/xLCaAw24HE8"
+  }
 ]

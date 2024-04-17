@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }}</title>
         <link href="/style.css" rel="stylesheet">
+
+        <script>
+            function random(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+        </script>
     </head>
     <body>
         <a href="/">
@@ -30,8 +36,21 @@
                 <a target="_blank" href="https://soundcloud.com/gabriel-klavans">soundcloud</a>
             </nav>
             <span style="display: flex; justify-content: space-between;">
-                <p>{{ quotes | random | join(" - ") }}</p>
+                <p>
+                    <span id="quote">25% of the time js works 100% of the time</span>
+                    -
+                    <a id="quotee">mike wazowski</a>
+                </p>
                 <a href="/cringe-corner">the cringe corner</a>
+                <script>
+                    let quoteObjs = {{quotes | dump | safe}};
+                    let quoteObj = random(quoteObjs);
+                    document.getElementById("quote").textContent = `"${quoteObj.quote}"`;
+                    document.getElementById("quotee").textContent = quoteObj.quotee;
+                    if (quoteObj.link) {
+                        document.getElementById("quotee").href = quoteObj.link;
+                    }
+                </script>
             </span>
         </footer>
     </body
