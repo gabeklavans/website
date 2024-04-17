@@ -1,4 +1,4 @@
 {
-	"layout": "layout.njk",
+	"layout": "post.md",
 	"tags": "post"
 }
