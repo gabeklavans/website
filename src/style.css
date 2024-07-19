@@ -1,6 +1,6 @@
 body {
 	color: white;
-	background-color: #1e1e1e;	
+	background-color: #1e1e1e;
 }
 
 img {
@@ -36,6 +36,23 @@ nav {
 	font-size: larger;
 }
 
-.post>a,p {
+.post>a,
+p {
 	margin: 0;
+}
+
+/* Style the grid container */
+.art-wall {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	padding: 20px;
+	align-items: center;
+}
+
+/* Style the images */
+.art-wall img {
+	width: 100%;
+	height: auto;
+	background: radial-gradient(closest-side, white, transparent)
 }
