@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "where some magic happens",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "keywords": [],
   "author": "",
