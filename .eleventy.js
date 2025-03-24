@@ -1,4 +1,6 @@
-module.exports = function(eleventyConfig) {
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+
+export default function(eleventyConfig) {
 	eleventyConfig.addFilter("longDate", (date) => {
 		const options = {
 			year: 'numeric',
@@ -17,6 +19,25 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 	eleventyConfig.addPassthroughCopy({ "src/*.css": "/" });
+
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom",
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts",
+			limit: 0,
+		},
+		metadata: {
+			language: "en",
+			title: "gabe blog",
+			subtitle: "welcome. find my posts interesting, I dare you",
+			base: "https://dabe.tech",
+			author: {
+				name: "gabe",
+				email: "gabecodes@fastmail.com",
+			},
+		},
+	});
 
 	return {
 		dir: {
