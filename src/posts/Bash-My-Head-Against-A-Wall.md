@@ -9,13 +9,14 @@ There's a server in one of our makerspaces. A dinky desktop computer shoved into
 I was able to get the root user login and password from one of our graduating seniors before he went off to flex his pent up CS prowess. I was traveling with the [Spartans DBC](https://spartansdbc.org/ "Spartans Drum and Bugle Corps") for the summer, but I was eager to start tinkering with the server, so I whipped out my iPhone and started messaging my buddy [Julius](https://www.linkedin.com/in/juliusfrost/ "Jules") since he was on campus. The server is only accessible via devices with authorized SSH keys, so I fired up [Termius](https://termius.com "Tunneling on the go") and generated an SSH key for Julius to put into the server from the terminal at the makerspace. That's when we started running into problems.
 
 ## `authorized_keys`
-By default, giving someone access to a user on a Linux server is as simple as pasting their public key into the `authorized_keys` file. This is normally located in `~/.ssh/authorized_keys`. I already have an account on the server and my laptop was authorized to login. I figured I'll just put my phone's pubkey into my file and bingo,  
-![I'm in](https://thumbs.gfycat.com/LightheartedObviousBlowfish-size_restricted.gif)  
-*I'm in*.
 
-Well I was *not* in. There was no `.ssh` folder in my user's home directory. Odd. Creating an `authorized_keys` file didn't work. Using the `find` command I found the `authorized_keys` file, except it was a directory and it was in `/etc/ssh`. Turns out this is where config for key auth is. The admin created an `authorized_keys` folder, gave each user their own key file in there, changed the logic in `sshd_config` for searching for keys (specifically, to `/etc/ssh/authorized_keys/%u`, which was pretty cool), and then just *forgot* about it. No sweat though, I learned a lot about key auth. Putting my key in my respective user file allowed me to be  
-![I'm actually in](https://thumbs.gfycat.com/LightheartedObviousBlowfish-size_restricted.gif)  
-*actually in*.
+By default, giving someone access to a user on a Linux server is as simple as pasting their public key into the `authorized_keys` file. This is normally located in `~/.ssh/authorized_keys`. I already have an account on the server and my laptop was authorized to login. I figured I'll just put my phone's pubkey into my file and bingo,  
+![I'm in](/img/futaba-hacker.gif "futaba hacking in")  
+_I'm in_.
+
+Well I was _not_ in. There was no `.ssh` folder in my user's home directory. Odd. Creating an `authorized_keys` file didn't work. Using the `find` command I found the `authorized_keys` file, except it was a directory and it was in `/etc/ssh`. Turns out this is where config for key auth is. The admin created an `authorized_keys` folder, gave each user their own key file in there, changed the logic in `sshd_config` for searching for keys (specifically, to `/etc/ssh/authorized_keys/%u`, which was pretty cool), and then just _forgot_ about it. No sweat though, I learned a lot about key auth. Putting my key in my respective user file allowed me to be  
+![actually in](/img/yuki-hacker.gif "yuki hacking in")  
+_actually in_.
 
 However, now it was time to deal with the fact that every time I tried to tab complete anything (which I **frequently** do) it was yelling at me for the disk being full and being unable to create a temp file.
 

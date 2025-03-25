@@ -1,6 +1,6 @@
 ---
 date: 2020-10-13
-title: HyperV versus VirtualBox... Who Will Win? 
+title: HyperV versus VirtualBox... Who Will Win?
 subtitle: HyperV wins.
 tags: cringe
 ---
@@ -11,4 +11,4 @@ The two main pieces of software that I've come across that enable HyperV and bri
 
 The symptoms of this unholy pairing for me personally were sporadic loss of keyboard input in my VM, or hanging on boot screens with no error (this was made especially annoying for my Luks encrypted disk).
 
-It's a HyperV eat Virtualization world out there, tread lightly. 
+It's a HyperV eat Virtualization world out there, tread lightly.

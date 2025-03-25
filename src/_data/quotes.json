@@ -1,23 +1,23 @@
 [
-  {
-    "quote": "heck yeag",
-    "quotee": "julia"
-  },
-  {
-    "quote": "What is today, but yesterday's tomorrow?",
-    "quotee": "eugine"
-  },
-  {
-    "quote": "...the convention is rizzless!",
-    "quotee": "https://youtu.be/xLCaAw24HE8",
-    "link": "https://youtu.be/xLCaAw24HE8"
-  },
-  {
-    "quote": "You find it, you fix it.",
-    "quotee": "jake"
-  },
-  {
-    "quote": "likely story...",
-    "quotee": "jake's mom"
-  }
+    {
+        "quote": "heck yeag",
+        "quotee": "julia"
+    },
+    {
+        "quote": "What is today, but yesterday's tomorrow?",
+        "quotee": "eugine"
+    },
+    {
+        "quote": "...the convention is rizzless!",
+        "quotee": "https://youtu.be/xLCaAw24HE8",
+        "link": "https://youtu.be/xLCaAw24HE8"
+    },
+    {
+        "quote": "You find it, you fix it.",
+        "quotee": "jake"
+    },
+    {
+        "quote": "likely story...",
+        "quotee": "jake's mom"
+    }
 ]

@@ -11,6 +11,7 @@ subtitle: Bottles makes it easy
 I've found [Bottles](https://usebottles.com/) to be the most user-friendly and general-purpose solution for running Windows apps in Linux via [WINE](https://www.winehq.org/). Bottles [officially distributes builds](https://usebottles.com/download/#) on Flathub, so you can easily install it via `flatpak` on whatever Linux distro you're running.
 
 ## Download the Corporate Clash Windows Executable
+
 You can get it from [here](https://corporateclash.net/play).
 
 ## Set up a Bottle for Corporate Clash
@@ -18,9 +19,11 @@ You can get it from [here](https://corporateclash.net/play).
 Open up Bottles to get started.
 
 ### Create a new Bottle
+
 Click the "+" in the top left of the Bottles main screen to create start creating a new Bottle. Selecting the "🎮 Gaming" environment will set up the Bottle for playing Windows games with no config needed, so go ahead and do so. Make sure to also give the Bottle a name.
 
 ## Run the Corporate Clash Installer in your Bottle
+
 Once the Bottle has been created, click on it to go to its settings menu. There, you can hit the big "Run Executable..." button to open a file browser and select the Corporate Clash installer exe that we downloaded earlier. You may get a popup about sandboxing, you can ignore that since your downloads folder should be accessible by default.
 
 Once you've selected the Corporate Clash installer, the installer should open up in a Windows-looking window. You can proceed as normal until the launcher has successfully opened.

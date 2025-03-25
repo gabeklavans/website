@@ -12,26 +12,26 @@ Buckle up, cause it's a long one.
 
 - [Table of Contents](#table-of-contents)
 - [Planning Phase](#planning-phase)
-  - [Layout](#layout)
-    - [Bells and whistles](#bells-and-whistles)
-  - [Keycaps](#keycaps)
-  - [Switches](#switches)
+    - [Layout](#layout)
+        - [Bells and whistles](#bells-and-whistles)
+    - [Keycaps](#keycaps)
+    - [Switches](#switches)
 - [Design Phase](#design-phase)
-  - [Layout](#layout-1)
-  - [Switch Plate](#switch-plate)
-  - [PCB](#pcb)
-    - [Read this Guide](#read-this-guide)
-    - [Did you read the Guide](#did-you-read-the-guide)
-    - [Chip Selection](#chip-selection)
-    - [Alternatively, MCU Kit Selection](#alternatively-mcu-kit-selection)
+    - [Layout](#layout-1)
+    - [Switch Plate](#switch-plate)
+    - [PCB](#pcb)
+        - [Read this Guide](#read-this-guide)
+        - [Did you read the Guide](#did-you-read-the-guide)
+        - [Chip Selection](#chip-selection)
+        - [Alternatively, MCU Kit Selection](#alternatively-mcu-kit-selection)
 - [Build Phase](#build-phase)
-  - [Fabrication](#fabrication)
-    - [Case](#case)
-    - [Switch Plate](#switch-plate-1)
-    - [Electrical components](#electrical-components)
-      - [LEDs](#leds)
-  - [Assembly](#assembly)
-    - [Tools](#tools)
+    - [Fabrication](#fabrication)
+        - [Case](#case)
+        - [Switch Plate](#switch-plate-1)
+        - [Electrical components](#electrical-components)
+            - [LEDs](#leds)
+    - [Assembly](#assembly)
+        - [Tools](#tools)
 
 # Planning Phase
 
@@ -102,7 +102,7 @@ Lay out your layout and save the design or the raw data somewhere for later.
 
 ## Switch Plate
 
-The flow I used to *maximize efficiency* is to design/generate the plate then design the case around it and the PCB in the image of it. So we'll start with the plate.
+The flow I used to _maximize efficiency_ is to design/generate the plate then design the case around it and the PCB in the image of it. So we'll start with the plate.
 
 First you'll want to generate a plate using the keyboard data from your layout.
 
@@ -153,12 +153,12 @@ This is gonna be a 1.5mm $\pm$ 0.1mm sheet, likely laser, plasma, or water-jet c
 
 Common materials to make a switch plate out of, in order of most to least common, are:
 
- 1. Aluminum
+1.  Aluminum
     - Cheap, tried and true
- 2. Brass
+2.  Brass
     - People say it offers a deeper, richer bottom out sound and feel
     - A bit more expensive than alu
- 3. Polycarbonate
+3.  Polycarbonate
     - A softer bottom out feel with more give in the board
     - Can be better for diffusing RGB backlighting
 
@@ -190,20 +190,20 @@ You will need a variety of tools for this kind of work. However, not everyone wi
 Here are some things you'll definitely want to consider:
 
 - [THT](https://en.wikipedia.org/wiki/Through-hole_technology "Through Hole Technology") vs [SMD](https://en.wikipedia.org/wiki/Surface-mount_technology "Solder Mount Device") design
-  - If you are using all TH components, you will probably get by with just a soldering iron kit
-  - If you have some or all SMD components, as I did, then you are DEFINITELY going to want to get a hot air station, like [this one](https://www.amazon.com/YIHUA-959D-Digital-Efficiency-212%C2%B0F-932%C2%B0F-Iron-burn/dp/B08BK3M6YW/), and some [solder paste](https://www.amazon.com/MG-Chemicals-Leaded-Solder-Paste/dp/B00TIC895Y)
-    - Using these, you can place down paste where you want to solder on components, affix the component in place, and melt down the solder paste with hot air
-    - This creates incredibly clean joints in areas that may be nearly impossible to reach with an iron
-    - It also makes removing parts a lot easier
+    - If you are using all TH components, you will probably get by with just a soldering iron kit
+    - If you have some or all SMD components, as I did, then you are DEFINITELY going to want to get a hot air station, like [this one](https://www.amazon.com/YIHUA-959D-Digital-Efficiency-212%C2%B0F-932%C2%B0F-Iron-burn/dp/B08BK3M6YW/), and some [solder paste](https://www.amazon.com/MG-Chemicals-Leaded-Solder-Paste/dp/B00TIC895Y)
+        - Using these, you can place down paste where you want to solder on components, affix the component in place, and melt down the solder paste with hot air
+        - This creates incredibly clean joints in areas that may be nearly impossible to reach with an iron
+        - It also makes removing parts a lot easier
 - The size of your screws
-  - Some screws that you picked out may be pretty small, or require interesting drivers, like torx
-  - Make sure you have a tool that can interface with your screws effectively
+    - Some screws that you picked out may be pretty small, or require interesting drivers, like torx
+    - Make sure you have a tool that can interface with your screws effectively
 - Soldering equipment
-  - There's a variety of quality-of-life tools for working with solder, such as fans to suck away the fumes and mats to protect your surfaces
-  - Get what will make you feel most comfortable, but I do recommend a fan, as those fumes feel like cancer and it really sucks to have to hold your breath every time you melt solder
+    - There's a variety of quality-of-life tools for working with solder, such as fans to suck away the fumes and mats to protect your surfaces
+    - Get what will make you feel most comfortable, but I do recommend a fan, as those fumes feel like cancer and it really sucks to have to hold your breath every time you melt solder
 - Get flux
-  - Just do it (it prevents oxidization which can lead to resistance in solder, bad joints, or other corrosive negative effects)
-  - Use it whenever you reflow a joint, or whenever you melt non-flux-core solder
-  - It can be in pen form
+    - Just do it (it prevents oxidization which can lead to resistance in solder, bad joints, or other corrosive negative effects)
+    - Use it whenever you reflow a joint, or whenever you melt non-flux-core solder
+    - It can be in pen form
 
 Don't burn yourself, don't breathe in solder fumes, and BUY EXTRA PARTS. You WILL probably destroy at least one component, and they're cheap enough that getting an extra 2-3 won't hurt.

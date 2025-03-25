@@ -1,58 +1,58 @@
 body {
-	color: white;
-	background-color: #1e1e1e;
+    color: white;
+    background-color: #1e1e1e;
 }
 
 img {
-	width: 50%;
-	height: auto;
+    width: 50%;
+    height: auto;
 }
 
 main {
-	padding: 0 10%;
+    padding: 0 10%;
 }
 
 a {
-	color: white;
+    color: white;
 }
 
 nav {
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	gap: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 .post {
-	margin: 1em;
+    margin: 1em;
 }
 
-.post>time {
-	opacity: 0.6;
-	font-size: smaller;
+.post > time {
+    opacity: 0.6;
+    font-size: smaller;
 }
 
-.post>a {
-	font-size: larger;
+.post > a {
+    font-size: larger;
 }
 
-.post>a,
+.post > a,
 p {
-	margin: 0;
+    margin: 0;
 }
 
 /* Style the grid container */
 .art-wall {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	padding: 20px;
-	align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
 }
 
 /* Style the images */
 .art-wall img {
-	width: 100%;
-	height: auto;
-	background: radial-gradient(closest-side, white, transparent)
+    width: 100%;
+    height: auto;
+    background: radial-gradient(closest-side, white, transparent);
 }

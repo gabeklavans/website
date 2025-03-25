@@ -16,18 +16,18 @@ Github Pages just serves static pages. If I wanted any sort of interactivity wit
 
 The domain name would cost money, but I'm actually pretty ok with GP's default URL for now. It's just my name and an easy-to-remember suffix. Sweet, now I just need to generate some content.
 
-WordPress has a plugin that allows you to generate static HTML, which I can then just push to my GP repo. But that still felt like a little too much, and it would prevent me from taking advantage of a lot of WordPress's cool features. A broader Google search then pointed me to Jekyll, a framework for generating static-blogging content. [This fairly comprehensive article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "A fairly comprehensive article about building a blog with Jekyll on GP") got me through the process of creating a Jekyll blog on GP with ***advanced*** ease. The author even made a [*fork-and-go* template](https://github.com/barryclark/jekyll-now "Descriptive Title :open_mouth:"), the one I used to start this very blog. It can't get much easier.
+WordPress has a plugin that allows you to generate static HTML, which I can then just push to my GP repo. But that still felt like a little too much, and it would prevent me from taking advantage of a lot of WordPress's cool features. A broader Google search then pointed me to Jekyll, a framework for generating static-blogging content. [This fairly comprehensive article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/ "A fairly comprehensive article about building a blog with Jekyll on GP") got me through the process of creating a Jekyll blog on GP with **_advanced_** ease. The author even made a [_fork-and-go_ template](https://github.com/barryclark/jekyll-now "Descriptive Title :open_mouth:"), the one I used to start this very blog. It can't get much easier.
 
 In my Googling I also found [Disqus](https://disqus.com "Disqus' Homepage"), which is some sort of buff user-engagement service, but all I needed to know was that I could use it to add live commenting to my static blog.  
-Do I need this?  
+Do I need this?
 
 ![gif of a fish from Spongebob Squarepants shaking their head and mouthing "not at all boy!"](https://media1.tenor.com/images/e27172b21e27e80eb48b54e0cddd166d/tenor.gif?itemid=14439448)
 
-*No, not at all*
+_No, not at all_
 
 ...
 
-Do I *want* it?  
+Do I _want_ it?
 
 ![spongebob shaking his head so hard he splits in half](https://media.giphy.com/media/f7G6Ke8vwoC7cR4Ug0/giphy.gif)
 
