@@ -24,7 +24,7 @@ A "game" to telegram is just a web-app hosted elsewhere that reports back some i
 
 What I did *not* want to do was fully plan the infrastructure to support every game I'd want to make up front. So instead, I just kept the goal of future-expandability in mind as I implemented every back-end feature that I'd need to support Word Hunt Online (WHO) specifically. Once that was all in place, the hope was that adding a second game would flesh out all the things I didn't account for in terms of making GameJay flexible enough to handle many kinds of games, and it would logarithmically approach fully required flexibility.
 
-![chart](/img/howithoughtthiswouldgo.svg "a visual representation of how i thought the back-end maturity would progress")
+![a line graph with "flexibility" on the vertical axis and "number of games made" on the horizontal axis and a curved line growing vertically very quickly at first then evening out as it gets closer to a dotted horizontal line labeled "the good enough threshold", approximating a linear growth curve that approaches "the good enough threshold" at the limit](/img/howithoughtthiswouldgo.svg "a visual representation of how i thought the back-end maturity would progress")
 
 Given that I haven't started on a second game yet, I'd say I'm sticking to the vision pretty well so far.
 
@@ -54,6 +54,6 @@ I made the game itself in [phaser](https://phaser.io/) because I had made a few 
 
 Figuring out the UX was fairly straightforward, made easier by great feedback from my friends. The hardest part of the UI was the dragging interaction to make words. The feel of it took a couple iterations to pin down. It had to be smooth and forgiving enough to remain accurate while the player quickly tried to match words. I tried to achieve this by rounding out the hitboxes of the tiles a bit and having some forgiving out-of-bounds checking as long as the press event is held.
 
-![debug screenshot](/img/who-debug.png "a screenshot of the WHO board with debug lines turned on")
+![a screenshot of the current WHO UI with octagonal hitboxes around each letter-tile drawn on screen for debugging purposes](/img/who-debug.png "a screenshot of the WHO board with debug lines turned on")
 
 The most involved technical challenge was figuring out how to generate a board and get all its valid words.
