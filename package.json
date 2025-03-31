@@ -4,7 +4,9 @@
   "description": "where some magic happens",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+      "serve": "eleventy --serve --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "",
