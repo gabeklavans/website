@@ -1,6 +1,15 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote"
 
-export default function (eleventyConfig) {
+export default function(eleventyConfig) {
+    // override markdown parser
+    eleventyConfig.setLibrary("md", markdownIt({
+        html: true,
+        linkify: false,
+    }).use(markdownItFootnote));
+
     eleventyConfig.addFilter("longDate", (date) => {
         const options = {
             year: "numeric",
@@ -38,6 +47,8 @@ export default function (eleventyConfig) {
             },
         },
     });
+
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
         dir: {
