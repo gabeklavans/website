@@ -5,12 +5,12 @@ title: the making of GameJay and Word Hunt Online
 
 A couple of my friends got me into playing word hunt through the popular iOS iMessage games app GamePigeon. If you aren't familiar, word hunt is basically just boggle, which is a game where you have to find as many 3+ letter long words in a 4x4 grid of randomly generated letters. The game board kinda looks like this:
 
-|   |   |   |   |
-|---|---|---|---|
-| p | e | e | i |
-| o | t | s | s |
-| r | e | d | i |
-| e | h | t | n |
+|     |     |     |     |
+| --- | --- | --- | --- |
+| p   | e   | e   | i   |
+| o   | t   | s   | s   |
+| r   | e   | d   | i   |
+| e   | h   | t   | n   |
 
 Anyway, I eventually went on a crusade to move all the people I communicate with onto a chat platform called [telegram](https://telegram.org/) for a plethora of motivations, some of which are no longer valid or are counteracted by minor enshitification on the platform as of 2025 (don't pay too much attention to the post's date) but that's beside the point. I wanted to text my friends via telegram but I wanted to keep playing boggle I mean word hunt. Simple problem, simple solution.
 
@@ -20,9 +20,9 @@ So telegram at the time had a rudimentary [gaming platform](https://core.telegra
 
 ### building a games platform as a bot
 
-A "game" to telegram is just a web-app hosted elsewhere that reports back some info. A single bot can serve up several games via telegram's API. They even allow for a sort of searching functionality for bots that support it built right into the chat box. It felt natural to design GameJay to host all sorts of clones of popular chat-app games, including 8-ball and shuffleboard-esque games. 
+A "game" to telegram is just a web-app hosted elsewhere that reports back some info. A single bot can serve up several games via telegram's API. They even allow for a sort of searching functionality for bots that support it built right into the chat box. It felt natural to design GameJay to host all sorts of clones of popular chat-app games, including 8-ball and shuffleboard-esque games.
 
-What I did *not* want to do was fully plan the infrastructure to support every game I'd want to make up front. So instead, I just kept the goal of future-expandability in mind as I implemented every back-end feature that I'd need to support Word Hunt Online (WHO) specifically. Once that was all in place, the hope was that adding a second game would flesh out all the things I didn't account for in terms of making GameJay flexible enough to handle many kinds of games, and it would logarithmically approach fully required flexibility.
+What I did _not_ want to do was fully plan the infrastructure to support every game I'd want to make up front. So instead, I just kept the goal of future-expandability in mind as I implemented every back-end feature that I'd need to support Word Hunt Online (WHO) specifically. Once that was all in place, the hope was that adding a second game would flesh out all the things I didn't account for in terms of making GameJay flexible enough to handle many kinds of games, and it would logarithmically approach fully required flexibility.
 
 ![a line graph with "flexibility" on the vertical axis and "number of games made" on the horizontal axis and a curved line growing vertically very quickly at first then evening out as it gets closer to a dotted horizontal line labeled "the good enough threshold", approximating a linear growth curve that approaches "the good enough threshold" at the limit](/img/howithoughtthiswouldgo.svg "a visual representation of how i thought the back-end maturity would progress")
 
@@ -30,11 +30,11 @@ Given that I haven't started on a second game yet, I'd say I'm sticking to the v
 
 ## Word Hunt Online
 
-So I started loosely planning out the hard parts of making this game so I could tackle them first and figure out what I could and could not do with WHO. I started with fully familiarizing myself with telegram's games API. The biggest problem (besides the fact that I had to make time to program all this) was that the gaming platform was pretty basic in that it only accepted scores and only kept track of high scores in their back-end. The rest of the game was just an instance of a front-end web-app that eventually sent said score. But I would be damned if I didn't have my word hunt so I came up with 
+So I started loosely planning out the hard parts of making this game so I could tackle them first and figure out what I could and could not do with WHO. I started with fully familiarizing myself with telegram's games API. The biggest problem (besides the fact that I had to make time to program all this) was that the gaming platform was pretty basic in that it only accepted scores and only kept track of high scores in their back-end. The rest of the game was just an instance of a front-end web-app that eventually sent said score. But I would be damned if I didn't have my word hunt so I came up with
 
 ### the workaround for scoring
 
-The actual score that each player achieved for a given game is not the score that I send to telegram. If I did that, no one would be able to keep track of who won a particular game if they scored below the highest scores unless they clicked on the game. There would also be no way to notify that a player potentially won. So instead, I treat the scores stored in telegram as the number of wins achieved by that player for the history of the chat. Thus, once more than one player has finished up a round for a given game, a winner is determined and that winner gets their existing "high score" incremented and sent back to telegram. The scores only ever go up, so all wins will be accounted for, and whenever a player increments the highest number of wins in the chat, a notification is sent. That does mean that a notification will _only_ be sent if the player with the most wins gets another win, but it's better than no notifications at all. We'll come get to notifications. This workaround functioned pretty well after a LOT of edge-case catching. It was a bit tricky because I wanted to handle having 
+The actual score that each player achieved for a given game is not the score that I send to telegram. If I did that, no one would be able to keep track of who won a particular game if they scored below the highest scores unless they clicked on the game. There would also be no way to notify that a player potentially won. So instead, I treat the scores stored in telegram as the number of wins achieved by that player for the history of the chat. Thus, once more than one player has finished up a round for a given game, a winner is determined and that winner gets their existing "high score" incremented and sent back to telegram. The scores only ever go up, so all wins will be accounted for, and whenever a player increments the highest number of wins in the chat, a notification is sent. That does mean that a notification will _only_ be sent if the player with the most wins gets another win, but it's better than no notifications at all. We'll come get to notifications. This workaround functioned pretty well after a LOT of edge-case catching. It was a bit tricky because I wanted to handle having
 
 ### multiple players in one game (and other added features)
 
@@ -46,7 +46,7 @@ When a player finished a round in a game, they were moved to a results screen wh
 
 Integrating back to the telegram app required a lot of creative thinking since, as I mentioned, the games API was pretty basic. I didn't have access to any device features like haptics and I could NOT figure out a decent way to send a notification that didn't feel like unrelated bot-spam.
 
-I wanted a way for users to quickly see who won a game and by how much without having to actually go to the game's web-app. There did exist pretty robust support for editing messages sent by bots (made INCREDIBLY accessible by the [grammY](https://grammy.dev/) library, *huge* shoutout to that project), so I utilized that pretty well. The placements (1st, 2nd, etc...) were added as buttons below the game's message in the chat, and pressing a button showed the score that player received. I initially had the scores in the buttons themselves, but I got feedback that seeing the score that another player achieved in a game before you even see the board was intimidating/off-putting. 
+I wanted a way for users to quickly see who won a game and by how much without having to actually go to the game's web-app. There did exist pretty robust support for editing messages sent by bots (made INCREDIBLY accessible by the [grammY](https://grammy.dev/) library, _huge_ shoutout to that project), so I utilized that pretty well. The placements (1st, 2nd, etc...) were added as buttons below the game's message in the chat, and pressing a button showed the score that player received. I initially had the scores in the buttons themselves, but I got feedback that seeing the score that another player achieved in a game before you even see the board was intimidating/off-putting.
 
 ### the actual game
 
@@ -93,7 +93,7 @@ As I mentioned, telegram's score API was providing all the storage I needed to m
 
 As for the games themselves, they did require some in-memory state to be stored for some amount of time so that people could join a game that was started some time in the past. I could store all that in a database, but due to the motivations mentioned prior, I decided to just keep all games in memory and clean up old games after a certain expiry period. To keep the code simple, this expiry gets checked whenever a new game is created or an existing game is joined. I don't care about lingering games if there's no activity to push the memory usage one way or the other, so I think this method works well.
 
-Keeping everything in memory could very well bite me later on, but only if the game sees enough activity. I already put a somewhat arbitrary limit on the number of games that can exist at a time, but that's certainly a bridge not worth crossing until I get there.. or something.[^1] 
+Keeping everything in memory could very well bite me later on, but only if the game sees enough activity. I already put a somewhat arbitrary limit on the number of games that can exist at a time, but that's certainly a bridge not worth crossing until I get there.. or something.[^1]
 
 ### hosting
 
