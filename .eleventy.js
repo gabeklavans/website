@@ -1,6 +1,6 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
-export default function (eleventyConfig) {
+export default function(eleventyConfig) {
     eleventyConfig.addFilter("longDate", (date) => {
         const options = {
             year: "numeric",
@@ -37,6 +37,21 @@ export default function (eleventyConfig) {
                 email: "gabecodes@fastmail.com",
             },
         },
+    });
+
+    const parseDate = (str) => {
+        if (str instanceof Date) {
+            return str;
+        }
+        return new Date(str);
+    };
+
+    eleventyConfig.addFilter("date_to_datetime", async (obj) => {
+        if (!obj) {
+            return "";
+        }
+        const date = parseDate(obj);
+        return date.toISOString();
     });
 
     return {
