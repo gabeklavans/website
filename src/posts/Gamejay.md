@@ -101,8 +101,6 @@ I needed some way to host the game that was more stable than my home server. WHO
 
 I want to move to a more eco-friendly hosting provider, such as [GreenGeeks](https://www.greengeeks.com/) or something from [this directory](https://www.thegreenwebfoundation.org/tools/directory/) that I found while searching for eco-friendly hosting providers (funny enough, Cloudflare is in there, but I'm not sure how much effort they put into being green while also running one of the largest network infrastructures in the world). Due to pricing and convenience, I'll likely wait to make the move until I first start to see some meaningful traffic.
 
-[^1]: "Walk a man across a bridge, and he'll have dealt with one problem. Teach a man to cross bridges, and he'll deal with problems for life."
-
 ## Looking ahead
 
 As I said before, the goal for GameJay is to host all kinds of little chat games and GamePigeon clones. Creating WHO wasn't _too_ much effort, and now that I have a lot of the ground work laid out in GameJay, adding more games should be much less of a daunting task. I can get fancy with some by adding real-time interactions using web-sockets and lobby systems, as well as more complex UIs for individual games, since they are all stand-alone web applications. If I do end up implementing some sort of GameJay-wide storage, I'll likely want to develop some sort of pluggable UI system for displaying common stats across games, or just integrating it into telegram's chat interface, since you can do some pretty [fancy stuff](https://grammy.dev/plugins/menu) in there.
@@ -116,3 +114,5 @@ Well, all that came out after I had finished like 80% of GameJay + WHO. I was fi
 Converting GameJay to a mini-app is absolutely in my plans, but for now I'm satisfied with what I've accomplished so far using the games API.
 
 Now stop reading so dang much and [go play](https://t.me/gamejaybot) some boggle I mean word hunt I mean Word Hunt Online.
+
+[^1]: "Walk a man across a bridge, and he'll have dealt with one problem. Teach a man to cross bridges, and he'll deal with problems for life."
