@@ -10,6 +10,8 @@ img {
 
 main {
     padding: 0 10%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 a {
@@ -43,8 +45,8 @@ p {
 }
 
 main > p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* Style the grid container */
