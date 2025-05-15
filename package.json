@@ -4,7 +4,9 @@
   "description": "where some magic happens",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "serve": "eleventy --serve --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "",
@@ -13,6 +15,9 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.0",
-    "@11ty/eleventy-plugin-rss": "^2.0.3"
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0"
   }
 }

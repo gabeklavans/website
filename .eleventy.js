@@ -1,6 +1,16 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote";
 
-export default function(eleventyConfig) {
+export default function (eleventyConfig) {
+    const mdConfig = {
+        html: true,
+        linkify: false,
+    };
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.configure(mdConfig));
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
+
     eleventyConfig.addFilter("longDate", (date) => {
         const options = {
             year: "numeric",
@@ -53,6 +63,8 @@ export default function(eleventyConfig) {
         const date = parseDate(obj);
         return date.toISOString();
     });
+
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
         dir: {
