@@ -84,7 +84,7 @@ const isTileReachable =
 
 ## GameJay
 
-My process for ensuring GameJay worked as a generic games back-end was so iterative and test-driven that I can't even really remember all the twists and turns I took to get it into its current state. I remember spending a _lot_ of time on the logic for determining who was the winner of a particular game of WHO and how to recalculate the "scores" given on an arbitrary number of players completing at arbitrary times. I basically turned Telegram's rudimentary high-score-storing API into an incremental database. And I did it for free!
+My process for ensuring GameJay worked as a generic games back-end was so iterative and test-driven that I can't even really remember all the twists and turns I took to get it into its current state. I remember spending a _lot_ of time on the logic for determining which player was the winner of a particular game of WHO and how to recalculate the "scores" with any number of players finishing at arbitrary times. I basically turned Telegram's rudimentary high-score-storing API into an incremental database. And I did it for free!
 
 I tried to preemptively use generic concepts when supporting WHO features, like implementing the idea of "turns" even though every player in a WHO game only technically gets one turn. Or when to consider a game "complete" even though anyone can take their turn in a WHO game at any point that the game is valid.
 
