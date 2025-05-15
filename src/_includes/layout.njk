@@ -10,7 +10,9 @@
             rel="stylesheet"
         />
 
+        {% if env.branch == "main" %}
         <script defer src="https://analytics.dabe.tech/script.js" data-website-id="{{ env.analyticsId }}"></script>
+        {% endif %}
 
         <script>
             function random(arr) {
