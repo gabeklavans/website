@@ -5,13 +5,15 @@ eleventyImport:
   collections: ["posts"]
 ---
 {% for post in collections.posts | reverse %}
-    <div class=post>
-        <a href={{ post.page.url }}>
-            {{ post.data.title }}
-        </a>
-        <br>
-        <time datetime={{ post.date }}>{{ post.date | longDate }}</time>
-        <br>
-        <p>{{ post.data.subtitle }}</p>
-    </div>
+    {% if "hidden" not in post.data.tags %}
+        <div class=post>
+            <a href={{ post.page.url }}>
+                {{ post.data.title }}
+            </a>
+            <br>
+            <time datetime={{ post.date }}>{{ post.date | longDate }}</time>
+            <br>
+            <p>{{ post.data.subtitle }}</p>
+        </div>
+    {% endif %}
 {% endfor %}
