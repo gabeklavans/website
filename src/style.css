@@ -14,6 +14,21 @@ main {
     max-width: 1000px;
 }
 
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid;
+}
+
+tbody>th,
+td {
+    padding: 10px;
+}
+
 a {
     color: white;
 }
@@ -30,21 +45,21 @@ nav {
     margin: 1em;
 }
 
-.post > time {
+.post>time {
     opacity: 0.6;
     font-size: smaller;
 }
 
-.post > a {
+.post>a {
     font-size: larger;
 }
 
-.post > a,
+.post>a,
 p {
     margin: 0;
 }
 
-main > p {
+main>p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
