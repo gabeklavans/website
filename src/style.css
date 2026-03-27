@@ -1,6 +1,32 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+        url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     color: white;
     background-color: #1e1e1e;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+hr {
+    color: #D45600;
+}
+
+a {
+    color: white;
 }
 
 img {
@@ -13,6 +39,21 @@ main {
     margin: 0 auto;
     max-width: 1000px;
 }
+
+main,
+.e-content>p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.e-content a:link {
+    color: #A8DADC;
+}
+
+.e-content a:visited {
+    color: #B39CD0;
+}
+
 
 table {
     border: 2px solid;
@@ -29,21 +70,9 @@ td {
     padding: 10px;
 }
 
-a {
-    color: white;
-}
-
 .me {
     display: flex;
     align-items: center;
-}
-
-nav {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
 }
 
 .post {
@@ -62,12 +91,6 @@ nav {
 .post>a,
 p {
     margin: 0;
-}
-
-main,
-.e-content>p {
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 /* Style the grid container */
