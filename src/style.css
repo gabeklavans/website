@@ -64,7 +64,8 @@ p {
     margin: 0;
 }
 
-main>p {
+main,
+.e-content>p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
