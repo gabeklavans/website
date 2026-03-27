@@ -1,7 +1,7 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
+import Webmentions from "eleventy-plugin-webmentions";
 
 export default function (eleventyConfig) {
     const mdConfig = {
@@ -46,6 +46,14 @@ export default function (eleventyConfig) {
                 name: "gabe",
                 email: "gabecodes@fastmail.com",
             },
+        },
+    });
+
+    eleventyConfig.addPlugin(Webmentions, {
+        domain: "dabe.tech",
+        token: "8CMiwBap2QpA5ceqdNr_yA", // take that, leaked credential detectors!
+        mentionTypes: {
+            mentions: ["like-of", "mention-of", "in-reply-to"],
         },
     });
 

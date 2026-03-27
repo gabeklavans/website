@@ -26,4 +26,34 @@ layout: layout.njk
             {% endfor %}
         </p>
     </div>
+
 </article>
+
+{%- set currentPostMentions = webmentions | webmentionsForPage -%}
+<div class="webmentions">
+
+    <hr>
+
+    <h3>{{ currentPostMentions.total }} Webmentions</h3>
+    <p class="timestamp">Last fetched: {{ webmentionsLastFetched }}</p>
+
+    {% for mention in currentPostMentions.mentions %}
+        <div class="h-entry">
+            <p>
+            <a class="p-author h-card" href="{{ mention.author.url }}">
+                <img class="u-photo avatar" alt="" src="{{ mention.author.photo or 'https://developer.valvesoftware.com/w/images/8/8b/Debugempty.png' }}"/>{{ mention.author.name or "unknown" }}</a>
+            <a class="u-url" href="{{ mention.url }}">
+            {% if mention["wm-property"] == "like-of" %}
+                liked</a>:
+                <a href="{{ page.url }}" class="u-like-of">{{ title }}</a></p>
+            {% elif mention["wm-property"] == "in-reply-to" %}
+                replied to</a>:
+                <a href="{{ page.url }}" class="u-in-reply-to">{{ title }}</a></p>
+                <blockquote class="p-name p-content">{{ mention.content.html | safe }}</div>
+            {% elif mention["wm-property"] == "mention-of" %}
+                mentioned</a>:
+                <a href="{{ page.url }}">{{ title }}</a></p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

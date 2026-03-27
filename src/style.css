@@ -13,6 +13,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+img {
+    width: 50px;
+    height: auto;
+}
+
 nav {
     text-align: center;
     display: flex;
@@ -29,15 +34,24 @@ a {
     color: white;
 }
 
-img {
+.e-content img {
     width: 50%;
     height: auto;
 }
 
 main {
-    padding: 0 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+article {
+    padding: 0 3%;
     margin: 0 auto;
     max-width: 1000px;
+}
+
+.webmentions .h-entry {
+    margin: 20px 0;
 }
 
 main,
@@ -53,7 +67,6 @@ main,
 .e-content a:visited {
     color: #B39CD0;
 }
-
 
 table {
     border: 2px solid;
@@ -118,4 +131,16 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+/* I'm assuming these are emojis... */
+blockquote>p>img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.timestamp {
+    font-size: smaller;
+    font-weight: lighter;
+    font-style: italic;
 }
