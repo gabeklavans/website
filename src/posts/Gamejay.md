@@ -1,6 +1,6 @@
 ---
 date: 2024-09-01
-title: the making of GameJay and Word Hunt Online
+title: The Making of GameJay and Word Hunt Online
 ---
 
 My partner got me into playing Word Hunt through the popular iOS iMessage games app GamePigeon. If you aren't familiar, Word Hunt is basically just Boggle, which is a game where you have to find words in a 4x4 grid of randomly generated letters under a certain time limit. The game board kinda looks like this:

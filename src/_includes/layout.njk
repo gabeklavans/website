@@ -21,13 +21,16 @@
         </script>
     </head>
     <body>
-        <a class="h-card" href="https://dabe.tech/">
-        {% if page.url == "/" %}
-            hi i'm gabe
-        {% else %}
-            {{ backs | random }}
-        {% endif %}
-        </a>
+        <div class="me">
+            <img class="u-photo avatar" src="/img/avatar.png"/>
+            <a class="h-card" href="https://dabe.tech/">
+            {% if page.url == "/" %}
+                gabe
+            {% else %}
+                {{ backs | random }}
+            {% endif %}
+            </a>
+        </div>
         <nav>
             <a href="/">blog</a>
             <a href="/projects">projects</a>
