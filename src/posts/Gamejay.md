@@ -12,7 +12,9 @@ My partner got me into playing Word Hunt through the popular iOS iMessage games 
 | r   | e   | d   | i   |
 | e   | h   | t   | n   |
 
-Anyway, I eventually went on a crusade to move all the people I communicate with onto a chat platform called [Telegram](https://telegram.org/). This was for a plethora of motivations, some of which are no longer valid or were negated by some minor enshitification on the platform as of 2025 (don't pay too much attention to the post's date) but that's beside the point. I wanted to text my friends via Telegram but I wanted to keep playing Boggle. I mean Word Hunt. Simple problem, simple solution.
+Anyway, I eventually went on a crusade to move all the people I communicate with onto a chat platform called [Telegram](https://Telegram.org/) for a plethora of motivations. _2025 edit:_ Many of these are no longer valid due to the platform's [enshitification](https://www.reuters.com/business/telegram-musks-xai-partner-distribute-grok-messaging-apps-users-2025-05-28/). _2026 edit_: In fact, they're so invalid, I've actually turned off the GameJay Telegram backend and don't plan to host any backend for it until I manage to make the platform compatible with some other chat platform. But I believe this post still showcases an interesting technical journey, so here we go anyway! 
+
+I wanted to text my friends via Telegram but I wanted to keep playing boggle. I mean word hunt. Simple problem, simple solution.
 
 ## a complicated solution
 
