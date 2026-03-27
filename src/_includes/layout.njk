@@ -23,15 +23,16 @@
         </script>
     </head>
     <body>
-        <div class="me">
+        <div class="h-card me">
             <img class="u-photo avatar" src="https://dabe.tech/img/avatar.png"/>
-            <a class="h-card" href="https://dabe.tech/">
+            <a class="u-url" href="https://dabe.tech/">
             {% if page.url == "/" %}
                 gabe
             {% else %}
                 {{ backs | random }}
             {% endif %}
             </a>
+            <p hidden>#nobridge</p>
         </div>
         <nav>
             <a href="/">blog</a>
