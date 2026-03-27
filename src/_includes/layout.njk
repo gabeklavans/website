@@ -23,7 +23,13 @@
     <body>
         <div class="me">
             <img class="u-photo avatar" src="https://dabe.tech/img/avatar.png"/>
-            <a rel="author" class="p-author h-card" href="https://dabe.tech/">gabe</a>
+            <a class="h-card" href="https://dabe.tech/">
+            {% if page.url == "/" %}
+                gabe
+            {% else %}
+                {{ backs | random }}
+            {% endif %}
+            </a>
         </div>
         <nav>
             <a href="/">blog</a>
