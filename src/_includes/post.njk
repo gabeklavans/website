@@ -13,18 +13,18 @@ layout: layout.njk
         {{ content | safe }}
         <a href="https://brid.gy/publish/mastodon"></a>
         <a href="https://brid.gy/publish/bluesky"></a>
-    </div>
 
-    <div class="post-footer">
-        <p>- <a rel="author" class="p-author h-card" href="https://dabe.tech/">gabe</a></p>
+        <div class="post-footer">
+            <p>- <a rel="author" class="p-author h-card" href="https://dabe.tech/">gabe</a></p>
 
-        <p>
-            {% for tag in tags %}
-                {% if tag != "post" %}
-                    #<span class="p-category">{{ tag }} </span>
-                {% endif %}
-            {% endfor %}
-        </p>
+            <p>
+                {% for tag in tags %}
+                    {% if tag != "post" %}
+                        #<span class="p-category">{{ tag }} </span>
+                    {% endif %}
+                {% endfor %}
+            </p>
+        </div>
     </div>
 
 </article>
