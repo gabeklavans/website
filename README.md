@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Moved to [codeberg](https://codeberg.org/gabeklavans/website)
+
 # my website
 
 where some magic happens
